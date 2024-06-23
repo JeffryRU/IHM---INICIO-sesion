@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Container, Dropdown, InputGroup, FormControl, Button, Navbar, Nav } from 'react-bootstrap';
+import { Container, Dropdown, FormControl, Button, Navbar} from 'react-bootstrap';
 import feather from 'feather-icons';
 import { Eye, EyeOff } from 'react-feather';
 import { Link } from 'react-router-dom';
@@ -136,10 +136,22 @@ const Login = () => {
                                         <div className='row align-items-center'>
                                             <div className='col-md-1'> </div>
                                             <div className='col-md-5 mx-auto'>
-                                                <button type="submit" className="btn btn-primary">
-                                                    Iniciar Sesión
-                                                </button>
+                                                <Link to="/" className="btn btn-primary" role="button">Iniciar Sesión</Link>
                                             </div>
+                                        </div>
+
+                                        <div className='row justify-content-center'>
+                                            <div className='col-md-7 text-end'> ¿Aun no tienes una cuenta? </div>
+                                            <div className='col-md-5 mx-auto'>
+                                                <Link to="/register" className="link-opacity-10-hover">Registrarse</Link>
+                                            </div>
+                                        </div>
+
+                                        <div className="col-md-1">
+                                            <p style={{ marginBottom: '5px' }}></p>
+                                            <Link to="/" className="text-decoration-none">
+                                                <i className="feather" data-feather="arrow-left" style={{ fontSize: '30px' }}></i>
+                                            </Link>
                                         </div>
                                     </form>
                                 </div>

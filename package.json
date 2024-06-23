@@ -13,9 +13,11 @@
     "license": "ISC",
     "dependencies": {
         "bootstrap": "^5.3.3",
+        "date-fns": "^3.6.0",
         "feather-icons": "^4.29.1",
         "react": "^18.2.0",
         "react-bootstrap": "^2.10.2",
+        "react-datepicker": "^7.1.0",
         "react-dom": "^18.2.0",
         "react-feather": "^2.0.10",
         "react-router-dom": "^6.23.0",
